@@ -42,7 +42,7 @@ $fontFamily: Helvetica;
         align-self: center;
         &:hover {
             border: 1px solid yellow;
-            border-radius: 10px;
+            border-radius: 20px;
             cursor: pointer;
             @extend %gradientTextColor;
             transition: 1s ease-in;
@@ -69,7 +69,7 @@ ul {
     align-items: center;
     left: 25%;
     max-width: 55vw;
-    top: 45%;
+    top: 40%;
     position: absolute;
     &_year {
         font-size: 30px;
@@ -97,4 +97,36 @@ ul {
     color: $fontColor;
     font-size: $fontSize;
     font-family: $fontFamily;
+}
+
+.about {
+    margin: 200px 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    &__image {
+        width: 50%;
+    }
+    &_image_inner {
+        width: 400px;
+    }
+    &_text {
+        width: 50%;
+    }
+    &_icon {
+        width: 40px;
+    }
+    &_pros {
+        margin-top: 150px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &_element {
+            width: 150px;
+            text-align: center;
+        }
+        &_par {
+            text-align: left;
+        }
+    }
 }
