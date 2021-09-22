@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100vh;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  height: 150px;
+  color: white;
+  width: 100%;
+}
+
+.menu_logo {
+  font-size: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(#f6f6f6), color-stop(67%, #5870d6));
+  background: linear-gradient(90deg, #f6f6f6 0%, #5870d6 67%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-left: 50px;
+}
+
+.menu_element {
+  text-decoration: none;
+  margin: 20px;
+}
+
+ul {
+  margin-right: 10vw;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=style.css.map */
