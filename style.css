@@ -53,7 +53,7 @@
 
 .menu_element:hover {
   border: 1px solid yellow;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   -webkit-transition: 1s ease-in;
   transition: 1s ease-in;
@@ -89,7 +89,7 @@ ul {
           align-items: center;
   left: 25%;
   max-width: 55vw;
-  top: 45%;
+  top: 40%;
   position: absolute;
 }
 
@@ -115,5 +115,57 @@ ul {
   color: white;
   font-size: 20px;
   font-family: Helvetica;
+}
+
+.about {
+  margin: 200px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about__image {
+  width: 50%;
+}
+
+.about_image_inner {
+  width: 400px;
+}
+
+.about_text {
+  width: 50%;
+}
+
+.about_icon {
+  width: 40px;
+}
+
+.about_pros {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about_pros_element {
+  width: 150px;
+  text-align: center;
+}
+
+.about_pros_par {
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
