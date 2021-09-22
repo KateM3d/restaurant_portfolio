@@ -1,8 +1,22 @@
+.menu_logo, .menu_element:hover {
+  background: #e8a426;
+  background: -webkit-gradient(linear, left top, right top, from(#e8a426), color-stop(67%, #c2d658));
+  background: linear-gradient(90deg, #e8a426 0%, #c2d658 67%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.slogan_year, .slogan_heading, .slogan_headingTwo {
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
 .wrapper {
   height: 100vh;
 }
 
 .menu {
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,28 +24,39 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: fixed;
+  position: absolute;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: black;
   height: 150px;
   color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
   width: 100%;
 }
 
 .menu_logo {
-  font-size: 60px;
-  background: -webkit-gradient(linear, left top, right top, from(#f6f6f6), color-stop(67%, #5870d6));
-  background: linear-gradient(90deg, #f6f6f6 0%, #5870d6 67%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-size: 90px;
   padding-left: 50px;
+  margin-top: 20px;
 }
 
 .menu_element {
   text-decoration: none;
   margin: 20px;
+  padding: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu_element:hover {
+  border: 1px solid yellow;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
 }
 
 ul {
@@ -43,5 +68,52 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.d-block,
+.slide {
+  height: 90vh;
+  top: 150px;
+}
+
+.slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 25%;
+  max-width: 55vw;
+  top: 45%;
+  position: absolute;
+}
+
+.slogan_year {
+  font-size: 30px;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+
+.slogan_heading {
+  font-size: 40px;
+  font-family: Helvetica;
+  font-weight: 700;
+}
+
+.btn {
+  width: 250px;
+  height: 80px;
+  margin-top: 20px;
+  background: #e8a426;
+  background: -webkit-gradient(linear, left top, right top, from(#e8a426), color-stop(67%, #c2d658));
+  background: linear-gradient(90deg, #e8a426 0%, #c2d658 67%);
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica;
 }
 /*# sourceMappingURL=style.css.map */
