@@ -59,6 +59,11 @@
   transition: 1s ease-in;
 }
 
+.refference {
+  text-decoration: none;
+  color: white;
+}
+
 ul {
   margin-right: 10vw;
   list-style: none;
@@ -136,6 +141,7 @@ ul {
 
 .about_image_inner {
   width: 400px;
+  height: 500px;
 }
 
 .about_text {
@@ -171,6 +177,7 @@ ul {
 
 .ourMenu {
   height: 100vh;
+  margin-bottom: 60px;
   background: #fffcdf;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,13 +250,150 @@ ul {
   text-align: center;
 }
 
+.ourMenu_selected_img {
+  width: 250px;
+}
+
 .ourMenu_selected_text {
   margin-top: 15px;
   font-size: 15px;
   text-align: center;
 }
 
-.ourMenu_selected_img {
-  width: 200px;
+.ourMenu_selected_inner {
+  position: relative;
+}
+
+.quotes {
+  background-image: url(img/quotes_bkgr.jpg);
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.quotes_heading {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.quotes_inner_slider_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 150px;
+}
+
+.quotes_inner_slider_container_btn {
+  width: 80px;
+  height: 50px;
+  background: #e8a426;
+  background: -webkit-gradient(linear, left top, right top, from(#e8a426), color-stop(67%, #c2d658));
+  background: linear-gradient(90deg, #e8a426 0%, #c2d658 67%);
+  color: white;
+  font-size: 20px;
+  font-family: Helvetica;
+  border-radius: 10px;
+  border: none;
+  margin: 0 100px;
+}
+
+.quotes_inner_slider_container_text {
+  color: white;
+  font-size: 20px;
+}
+
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 50px;
+}
+
+.contact_form_btn {
+  border: 3px solid yellow;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  height: 50px;
+}
+
+.contact_form_text {
+  font-size: 20px;
+}
+
+.contact_heading {
+  margin-top: 60px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 500px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+textarea {
+  height: 200px;
+}
+
+.footer_inner {
+  background-color: #3d3a3a;
+  height: 40vh;
+}
+
+.footer_inner_heading {
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+.footer_inner_icon {
+  width: 50px;
+  margin: 80px;
+}
+
+.footer_inner_icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_inner_icon:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
+}
+
+.signature {
+  margin: auto;
+  padding: 10px;
+  background-color: #272727;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 200;
 }
 /*# sourceMappingURL=style.css.map */
