@@ -1,9 +1,9 @@
 let menuElements = `[
     
     {"label" : "Home"},
-    {"label" : "About Us"},
+    {"label" : "About"},
     {"label" : "Menu"},
-    {"label" : "Contact Us"}
+    {"label" : "Contact"}
 ]`
 
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     for (item of menu) {
         menuContent += `
-            <li class="menu_element"> ${item.label} </li>`;
+            <li class="menu_element"><a class='refference' href="#${item.label}">${item.label} </a></li>`;
     }
 
     document.querySelector("ul").innerHTML = menuContent;
@@ -253,4 +253,38 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
+})
+
+const back = document.querySelector('#back');
+const next = document.querySelector('#next');
+const quotes = ["\"Lorem ipsum dolor sit amet, conse cteturad ipi scing elit. Suspen disse vitae ligula quis\" <br> Lorem Ipsum", "\"This section is comming soon\" <br> Sit Amet", "\"Lorem ipsum dolor sit amet, conse cteturad ipi scing elit. Suspen disse vitae ligula quis\" <br> Lorem Ipsum", "\"This section is comming soon\" <br> Sit Amet", ]
+
+console.log(quotes)
+let i = 0;
+
+next.addEventListener('click', () => {
+    i++;
+    if (i > quotes.length - 1) {
+        i = 0;
+    }
+    document.querySelector('.quotes_inner_slider_container_text').innerHTML = quotes[i];
+})
+
+back.addEventListener('click', () => {
+    i--;
+    if (i < 0) {
+        i = quotes.length - 1;
+    }
+    document.querySelector('.quotes_inner_slider_container_text').innerHTML = quotes[i];
+})
+
+
+const btnMoreInfo = document.querySelector('#btn_moreInfo');
+
+btnMoreInfo.addEventListener('click', () => {
+    Swal.fire(
+        'Got Questions?',
+        'Feel free to contact us!',
+        'question'
+    )
 })
