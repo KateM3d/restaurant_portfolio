@@ -240,6 +240,7 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+  text-align: center;
 }
 
 .ourMenu_selected_text {
