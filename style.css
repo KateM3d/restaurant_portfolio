@@ -168,4 +168,44 @@ ul {
 .about_pros_par {
   text-align: left;
 }
+
+.ourMenu {
+  height: 100vh;
+  background: #fffcdf;
+}
+
+.ourMenu_heading {
+  text-align: center;
+  padding: 120px;
+}
+
+.ourMenu_container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ourMenu_btn {
+  width: 170px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourMenu_btn:hover {
+  background-image: url(img/ourMenuBtnImage.jpg);
+  border: 3px solid orange;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
 /*# sourceMappingURL=style.css.map */
