@@ -71,51 +71,27 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     let breakfastMenuOptions = `[
         {
-        "image" : "",
+        "image" : "img/breakfast1.jpg",
         "name" : "Pancakes",
         "price" : "$12",
         "description" : "Lorem ipsum dolor sit amet"
         },
         {
-        "image":"",
+        "image":"img/breakfast2.jpg",
         "name":"2 eggs and potato",
         "price": "$12",
         "description":"Lorem ipsum dolor sit amet"
         },
         {
-        "image":"",
+        "image":"img/breakfast1.jpg",
         "name":"Cottage",
         "price": "$11",
         "description":"Lorem ipsum dolor sit amet"
         },
         {
-        "image":"",
+        "image":"img/breakfast2.jpg",
         "name":"Oatmeal",
         "price": "$12",
-        "description":"Lorem ipsum dolor sit amet"
-        },
-        {
-        "image":"",
-        "name":"Brakfast One",
-        "price": "$10",
-        "description":"Lorem ipsum dolor sit amet"
-        },
-        {
-        "image":"",
-        "name":"Brakfast Two",
-        "price": "$15",
-        "description":"Lorem ipsum dolor sit amet"
-        },
-        {
-        "image":"",
-        "name":"Brakfast Three",
-        "price": "$14",
-        "description":"Lorem ipsum dolor sit amet"
-        },
-        {
-        "image":"",
-        "name":"Brakfast Four",
-        "price": "$10",
         "description":"Lorem ipsum dolor sit amet"
         }
         ]`
@@ -124,51 +100,27 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     let lunchMenuOptions = `[
             {
-            "image":"",
+            "image":"img/lunch1.jpg",
             "name":"Wrap",
             "price": "$12",
             "description":"Lorem ipsum dolor sit amet"
             },
-            {
-                "image":"",
-                "name":"Club Sandwich",
-                "price": "$22",
-                "description":"Lorem ipsum dolor sit amet"
-                },
                 {
-                "image":"",
+                "image":"img/lunch2.jpg",
                 "name":"Chicken Wings",
                 "price": "$21",
                 "description":"Lorem ipsum dolor sit amet"
                 },
                 {
-                "image":"",
+                "image":"img/lunch1.jpg",
                 "name":"Salad",
                 "price": "$42",
                 "description":"Lorem ipsum dolor sit amet"
                 },
                 {
-                "image":"",
+                "image":"img/lunch2.jpg",
                 "name":"Lunch One",
                 "price": "$20",
-                "description":"Lorem ipsum dolor sit amet"
-                },
-                {
-                "image":"",
-                "name":"Lunch Two",
-                "price": "$55",
-                "description":"Lorem ipsum dolor sit amet"
-                },
-                {
-                "image":"",
-                "name":"Lunch Three",
-                "price": "$44",
-                "description":"Lorem ipsum dolor sit amet"
-                },
-                {
-                "image":"",
-                "name":"Lunch Four",
-                "price": "$40",
                 "description":"Lorem ipsum dolor sit amet"
                 }
             ]`
@@ -177,76 +129,53 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     let dinnerMenuOptions = `[
                 {
-                "image":"",
+                "image":"img/dinner1.jpg",
                 "name":"Steak",
                 "price": "$42",
                 "description":"Lorem ipsum dolor sit amet"
                 },
-                {
-                    "image":"",
-                    "name":"Shrimps",
-                    "price": "$22",
-                    "description":"Lorem ipsum dolor sit amet"
-                    },
+               
                     {
-                    "image":"",
+                    "image":"img/dinner2.jpg",
                     "name":"Fish",
                     "price": "$31",
                     "description":"Lorem ipsum dolor sit amet"
                     },
                     {
-                    "image":"",
+                    "image":"img/dinner3.jpg",
                     "name":"Pasta",
                     "price": "$42",
                     "description":"Lorem ipsum dolor sit amet"
                     },
                     {
-                    "image":"",
+                    "image":"img/dinner4.jpg",
                     "name":"Dinner One",
                     "price": "$30",
-                    "description":"Lorem ipsum dolor sit amet"
-                    },
-                    {
-                    "image":"",
-                    "name":"Dinner Two",
-                    "price": "$35",
-                    "description":"Lorem ipsum dolor sit amet"
-                    },
-                    {
-                    "image":"",
-                    "name":"Dinner Three",
-                    "price": "$44",
-                    "description":"Lorem ipsum dolor sit amet"
-                    },
-                    {
-                    "image":"",
-                    "name":"Dinner Four",
-                    "price": "$50",
                     "description":"Lorem ipsum dolor sit amet"
                     }
                 ]`
 
     let drinksMenuOptions = `[
                     {
-                    "image":"",
+                    "image":"img/drink1.jpg",
                     "name":"Red Wine",
                     "price": "per glass $12 / per bottle $40",
                     "description":"Lorem ipsum dolor sit amet"
                     },
                     {
-                        "image":"",
+                        "image":"img/drink2.jpg",
                         "name":"White Wine",
                         "price": "per glass $12 / per bottle $40",
                         "description":"Lorem ipsum dolor sit amet"
                         },
                         {
-                        "image":"",
+                        "image":"img/drink3.jpg",
                         "name":"Rose",
                         "price": "per glass $12 / per bottle $40",
                         "description":"Lorem ipsum dolor sit amet"
                         },
                         {
-                        "image":"",
+                        "image":"img/drink4.jpg",
                         "name":"Lemonade",
                         "price": "per glass $12 / per bottle $40",
                         "description":"Lorem ipsum dolor sit amet"
@@ -255,25 +184,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
     let vegetarianMenuOptions = `[
                         {
-                        "image":"",
+                        "image":"img/veg1.jpg",
                         "name":"Ceasar Salad",
                         "price":"$10",
                         "description":"Lorem ipsum dolor sit amet"
                         },
                         {
-                            "image":"",
+                            "image":"img/veg2.jpg",
                             "name":"Mixed Salad",
                             "price":"$10",
                             "description":"Lorem ipsum dolor sit amet"
                             },
                             {
-                            "image":"",
+                            "image":"img/veg3.jpg",
                             "name":"Veggies One",
                             "price":"$10",
                             "description":"Lorem ipsum dolor sit amet"
                             },
                             {
-                            "image":"",
+                            "image":"img/veg4.jpg",
                             "name":"Veggies Two",
                             "price":"$10",
                             "description":"Lorem ipsum dolor sit amet"
@@ -287,9 +216,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     for (menuButton of menuButtons) {
         ourMenuButtonsRes.innerHTML +=
             `<button class="ourMenu_btn btnNum${menuButtons.indexOf(menuButton)}">${menuButton.name}</button>
-            <div class="ourMenu_selected">
-            
-            </div>
+         
 `
     }
 
@@ -300,7 +227,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     let btnVegetarian = document.querySelector('.btnNum4');
     let selectedBtnOption = document.querySelector('.ourMenu_selected');
 
-    // btnBreakfast.addEventListener('click', loadMenu);
     selectedBtnOption.innerHTML = '';
     btnBreakfast.addEventListener('click', () => { loadMenu(breakfastMenuOptions, selectedBtnOption) });
     btnLunch.addEventListener('click', () => { loadMenu(lunchMenuOptions, selectedBtnOption) });
@@ -314,26 +240,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
         let selectedBtn = JSON.parse(selectedList);
 
         for (item of selectedBtn) {
-            selectedBtnOption.innerHTML += `
-            <img class="ourMenuImageSelected" src="${item.image}">
-            <h3>${item.name}</h3>
-            <h3>${item.price}</h3>
-            <h3>${item.description}</h3>
+            selectedBtnOption.innerHTML += `<div class="ourMenu_selected_options">
+            <img class="ourMenu_selected_img" src="${item.image}">
+            <h3 class="ourMenu_selected_text">${item.name}</h3>
+            <h3 class="ourMenu_selected_text">${item.price}</h3>
+            <h3 class="ourMenu_selected_text">${item.description}</h3>
+            </div>
             `
         }
-    }
 
-    // function loadMenu() {
-    //     let breakfastSelectedBtn = JSON.parse(breakfastMenuOptions);
-    //     let breakfastSelectedBtnShow = document.querySelector('.ourMenu_selected');
-    //     for (item of breakfastSelectedBtn) {
-    //         breakfastSelectedBtnShow.innerHTML += `
-    //         <img class="ourMenuImageSelected" src="${breakfastSelectedBtn.image}">
-    //         <h3>${breakfastSelectedBtn.name}</h3>
-    //         <h3>${breakfastSelectedBtn.price}</h3>
-    //         <h3>${breakfastSelectedBtn.description}</h3>
-    //         `
-    //     }
+    }
 
 
 
