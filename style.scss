@@ -1,132 +1,160 @@
-$fontColor: white;
-$fontSize: 20px;
-$fontFamily: Helvetica;
-%gradientTextColor {
-    background: rgb(232, 164, 38);
-    background: linear-gradient(90deg, rgba(232, 164, 38, 1) 0%, rgba(194, 214, 88, 1) 67%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-%sloganText {
-    color: white;
-    text-shadow: 2px 2px 3px black;
-}
-
-.wrapper {
-    height: 100vh;
-}
-
-.menu {
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: space-between;
-    background-color: black;
-    height: 150px;
-    color: $fontColor;
-    font-family: Helvetica, sans-serif;
-    font-size: $fontSize;
-    width: 100%;
-    &_logo {
-        font-size: 90px;
-        @extend %gradientTextColor;
-        padding-left: 50px;
-        margin-top: 20px;
+    $fontColor: white;
+    $fontSize: 20px;
+    $fontFamily: Helvetica;
+    %gradientTextColor {
+        background: rgb(232, 164, 38);
+        background: linear-gradient(90deg, rgba(232, 164, 38, 1) 0%, rgba(194, 214, 88, 1) 67%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
-    &_element {
-        text-decoration: none;
-        margin: 20px;
-        padding: 30px;
-        align-self: center;
-        &:hover {
-            border: 1px solid yellow;
-            border-radius: 20px;
-            cursor: pointer;
+    
+    %sloganText {
+        color: white;
+        text-shadow: 2px 2px 3px black;
+    }
+    
+    .wrapper {
+        height: 100vh;
+    }
+    
+    .menu {
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
+        background-color: black;
+        height: 150px;
+        color: $fontColor;
+        font-family: Helvetica, sans-serif;
+        font-size: $fontSize;
+        width: 100%;
+        &_logo {
+            font-size: 90px;
             @extend %gradientTextColor;
-            transition: 1s ease-in;
+            padding-left: 50px;
+            margin-top: 20px;
+        }
+        &_element {
+            text-decoration: none;
+            margin: 20px;
+            padding: 30px;
+            align-self: center;
+            &:hover {
+                border: 1px solid yellow;
+                border-radius: 20px;
+                cursor: pointer;
+                @extend %gradientTextColor;
+                transition: 1s ease-in;
+            }
         }
     }
-}
-
-ul {
-    margin-right: 10vw;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.d-block,
-.slide {
-    height: 90vh;
-    top: 150px;
-}
-
-.slogan {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    left: 25%;
-    max-width: 55vw;
-    top: 40%;
-    position: absolute;
-    &_year {
-        font-size: 30px;
+    
+    ul {
+        margin-right: 10vw;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .d-block,
+    .slide {
+        height: 90vh;
+        top: 150px;
+    }
+    
+    .slogan {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        left: 25%;
+        max-width: 55vw;
+        top: 40%;
+        position: absolute;
+        &_year {
+            font-size: 30px;
+            font-family: $fontFamily;
+            font-weight: 700;
+            @extend %sloganText;
+        }
+        &_heading {
+            font-size: 40px;
+            font-family: $fontFamily;
+            font-weight: 700;
+            @extend %sloganText;
+        }
+        &_headingTwo {
+            @extend %sloganText;
+        }
+    }
+    
+    .btn {
+        width: 250px;
+        height: 80px;
+        margin-top: 20px;
+        background: rgb(232, 164, 38);
+        background: linear-gradient(90deg, rgba(232, 164, 38, 1) 0%, rgba(194, 214, 88, 1) 67%);
+        color: $fontColor;
+        font-size: $fontSize;
         font-family: $fontFamily;
-        font-weight: 700;
-        @extend %sloganText;
     }
-    &_heading {
-        font-size: 40px;
-        font-family: $fontFamily;
-        font-weight: 700;
-        @extend %sloganText;
-    }
-    &_headingTwo {
-        @extend %sloganText;
-    }
-}
-
-.btn {
-    width: 250px;
-    height: 80px;
-    margin-top: 20px;
-    background: rgb(232, 164, 38);
-    background: linear-gradient(90deg, rgba(232, 164, 38, 1) 0%, rgba(194, 214, 88, 1) 67%);
-    color: $fontColor;
-    font-size: $fontSize;
-    font-family: $fontFamily;
-}
-
-.about {
-    margin: 200px 100px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    &__image {
-        width: 50%;
-    }
-    &_image_inner {
-        width: 400px;
-    }
-    &_text {
-        width: 50%;
-    }
-    &_icon {
-        width: 40px;
-    }
-    &_pros {
-        margin-top: 150px;
+    
+    .about {
+        margin: 200px 100px;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        &_element {
-            width: 150px;
-            text-align: center;
+        justify-content: space-around;
+        &__image {
+            width: 50%;
         }
-        &_par {
-            text-align: left;
+        &_image_inner {
+            width: 400px;
+        }
+        &_text {
+            width: 50%;
+        }
+        &_icon {
+            width: 40px;
+        }
+        &_pros {
+            margin-top: 150px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            &_element {
+                width: 150px;
+                text-align: center;
+            }
+            &_par {
+                text-align: left;
+            }
         }
     }
-}
+    
+    .ourMenu {
+        height: 100vh;
+        background: rgb(255, 252, 223);
+        &_heading {
+            text-align: center;
+            padding: 120px;
+        }
+        &_container {
+            margin-top: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        &_btn {
+            width: 170px;
+            height: 100px;
+            border: none;
+            background-color: $fontColor;
+            align-items: center;
+            &:hover {
+                background-image: url(img/ourMenuBtnImage.jpg);
+                border: 3px solid orange;
+                color: white;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+    }
