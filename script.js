@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             <li class="menu_element"><a class='refference' href="#${item.label}">${item.label} </a></li>`;
     }
 
-    document.querySelector("ul").innerHTML = menuContent;
+    document.querySelector(".menu_regular").innerHTML = menuContent;
 
     let aboutElements = JSON.parse(aboutPros);
     let aboutProsInner = document.querySelector('.about_pros');
