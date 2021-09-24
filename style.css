@@ -240,7 +240,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 80%;
-  height: 40vh;
+  height: fit -webkit-fit-content;
+  height: fit -moz-fit-content;
+  height: fit fit-content;
 }
 
 .ourMenu_selected_options {
